@@ -1,0 +1,22 @@
+{
+  "name": "Chart",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "upperteeth": {
+      "type": "string",
+      "required": true
+    },
+    "lowerteeth": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

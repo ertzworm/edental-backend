@@ -1,0 +1,58 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "db"
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Medicine": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Procedure": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Patient": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Consultation": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Chart": {
+    "dataSource": "db",
+    "public": true
+  }
+}
