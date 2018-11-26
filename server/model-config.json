@@ -14,15 +14,16 @@
     ]
   },
   "User": {
-    "dataSource": "db"
+    "dataSource": "db",
+    "public": true
   },
   "AccessToken": {
     "dataSource": "db",
-    "public": false
+    "public": true
   },
   "ACL": {
     "dataSource": "db",
-    "public": false
+    "public": true
   },
   "RoleMapping": {
     "dataSource": "db",
@@ -60,6 +61,10 @@
     "public": true
   },
   "Account": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Prescription": {
     "dataSource": "db",
     "public": true
   }

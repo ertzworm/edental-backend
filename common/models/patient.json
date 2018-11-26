@@ -59,6 +59,11 @@
       "type": "hasMany",
       "model": "Image",
       "foreignKey": "patientId"
+    },
+    "prescriptions": {
+      "type": "hasMany",
+      "model": "Prescription",
+      "foreignKey": "patientId"
     }
   },
   "acls": [
@@ -66,6 +71,18 @@
       "accessType": "*",
       "principalType": "ROLE",
       "principalId": "$authenticated",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
       "permission": "ALLOW"
     }
   ],
