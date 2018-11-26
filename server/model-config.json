@@ -54,5 +54,13 @@
   "Chart": {
     "dataSource": "db",
     "public": true
+  },
+  "Image": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Account": {
+    "dataSource": "db",
+    "public": true
   }
 }

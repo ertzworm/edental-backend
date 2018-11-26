@@ -1,5 +1,5 @@
 {
-  "name": "Patient",
+  "name": "Account",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -18,6 +18,22 @@
       "type": "string",
       "required": true
     },
+    "address": {
+      "type": "string",
+      "required": true
+    },
+    "ptrNumber": {
+      "type": "string",
+      "required": true
+    },
+    "licenseNumber": {
+      "type": "string",
+      "required": true
+    },
+    "contactNumber": {
+      "type": "string",
+      "required": true
+    },
     "age": {
       "type": "number",
       "required": true
@@ -26,48 +42,21 @@
       "type": "string",
       "required": true
     },
-    "civilStatus": {
-      "type": "string",
+    "birthDate": {
+      "type": "date",
       "required": true
     },
-    "occupation": {
-      "type": "string",
+    "isAdmin": {
+      "type": "boolean",
       "required": true
     },
-    "address": {
-      "type": "string",
-      "required": true
-    },
-    "contactNumber": {
+    "referenceId":{
       "type": "string",
       "required": true
     }
   },
   "validations": [],
-  "relations": {
-    "consultations": {
-      "type": "hasMany",
-      "model": "Consultation",
-      "foreignKey": "patientId"
-    },
-    "charts": {
-      "type": "hasMany",
-      "model": "Chart",
-      "foreignKey": "patientId"
-    },
-    "images": {
-      "type": "hasMany",
-      "model": "Image",
-      "foreignKey": "patientId"
-    }
-  },
-  "acls": [
-    {
-      "accessType": "*",
-      "principalType": "ROLE",
-      "principalId": "$authenticated",
-      "permission": "ALLOW"
-    }
-  ],
+  "relations": {},
+  "acls": [],
   "methods": {}
 }
