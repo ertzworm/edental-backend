@@ -67,5 +67,13 @@
   "Prescription": {
     "dataSource": "db",
     "public": true
+  },
+  "Appointment": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Log": {
+    "dataSource": "db",
+    "public": true
   }
 }
